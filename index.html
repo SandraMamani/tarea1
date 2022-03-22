@@ -1,15 +1,28 @@
 <html>
   <body>
-    <h1>Sumador</h1>
-    <form id="sumar-form">
-      <label for="primer-numero">Primer número:</label>
-      <input type="number" id="primer-numero" />
-      <label for="segundo-numero">Segundo número:</label>
-      <input type="number" id="segundo-numero" />
-      <input type="submit" value="Sumar" />
+    <h1>Totalizador de Ventas</h1>
+    <form id="ventas-form">
+      <label for="cantidad_">Ingresar la cantidad de Items:</label>
+      <input type="number" id="cantidad" />
+      <p>    </p>
+      <label for="precio_">Ingrese el precio por item:</label>
+      <input type="number" id="precio" />
+      
+      <p>    </p>
+      <label for = "estado_">Seleccione el estado: </label>
+      <select id = "estados">
+        <option>CA</option>
+        <option>TX</option>
+        <option>AL</option>
+        <option>NV</option>
+        <option>UT</option>              
+      </select>
+      <input type="submit" value=" Mostrar" />
     </form>
-    <div id="resultado-div"></div>
-
+    <div id="resul"></div>
+    <div id="resul_2"></div>
+    <div id="resul_3"></div>
+    <div id="resul_4"></div>
     <script type="module" src="./src/presenter.js"></script>
   </body>
 </html>
